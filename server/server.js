@@ -31,14 +31,12 @@ const PORT = process.env.PORT || 5000;
 app.use(
   cors({
     origin:
-      "https://mern-ecommerce-2024-client.vercel.app/auth/login",
+      "https://mern-ecommerce-2024-client.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT", "OPTIONS"],
     allowedHeaders: [
       "Content-Type",
       "Authorization",
-      "Cache-Control",
-      "Expires",
-      "Pragma",
+
     ],
     credentials: true,
   })
