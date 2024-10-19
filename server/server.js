@@ -29,7 +29,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin:"https://mern-ecommerce-2024server-h9zjl8232-mahmoud-allamas-projects.vercel.app/",
+    origin: "https://mern-ecommerce-2024-client.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
@@ -59,4 +59,4 @@ app.use("/api/common/feature", commonFeatureRouter);
 
 
 
-app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
+// app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
