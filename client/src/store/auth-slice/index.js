@@ -11,7 +11,7 @@ export const registerUser = createAsyncThunk(
   "/auth/register",
 
   async (formData) => {
-    const response = await axios.post("localhost:5000/api/auth/register",
+    const response = await axios.post("https://mern-ecommerce-2024server.vercel.app/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -26,7 +26,7 @@ export const loginUser = createAsyncThunk(
   "/auth/login",
 
   async (formData) => {
-    const response = await axios.post("localhost:5000/api/auth/login",
+    const response = await axios.post("https://mern-ecommerce-2024server.vercel.app/api/auth/login",
       formData,
       {
         withCredentials: true,
@@ -41,7 +41,7 @@ export const logoutUser = createAsyncThunk(
   "/auth/logout",
 
   async () => {
-    const response = await axios.post("localhost:5000/api/auth/logout",
+    const response = await axios.post("https://mern-ecommerce-2024server.vercel.app/api/auth/logout",
       {},
       {
         withCredentials: true,
