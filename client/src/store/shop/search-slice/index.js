@@ -10,7 +10,7 @@ export const getSearchResults = createAsyncThunk(
   "/order/getSearchResults",
   async (keyword) => {
     const response = await axios.get(
-      `https://mern-ecommerce-2024server.vercel.app/api/shop/search/${keyword}`
+      `https://mern-ecommerce-2024-client-git-main-mahmoud-allamas-projects.vercel.app/api/shop/search/${keyword}`
     );
 
     return response.data;
