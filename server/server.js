@@ -18,7 +18,7 @@ const shopReviewRouter = require("./routes/shop/review-routes");
 const commonFeatureRouter = require("./routes/common/feature-routes");
 
 //create a database connection -> u can also
-const db_url = process.env.db_url;
+const db_url = mongodb+srv://mahmoudallama22:mahmoudallama2244@cluster0.4kzms.mongodb.net/;
 mongoose
   .connect(db_url)
   .then(() => console.log("MongoDB connected"))
