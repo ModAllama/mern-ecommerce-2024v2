@@ -36,7 +36,9 @@ app.use(
     allowedHeaders: [
       "Content-Type",
       "Authorization",
-
+      "Cache-Control",
+      "Expires",
+      "Pragma",
     ],
     credentials: true,
   })
